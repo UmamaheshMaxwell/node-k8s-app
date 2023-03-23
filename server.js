@@ -3,7 +3,7 @@ import express from "express";
 const app = express()
 
 app.get("/", (req, res) => {
-    res.send("<h1 style='color:blue'>Welcome to the world of kubernetes !!!</h1>")
+    res.send("<h1 style='color:blue;background-color:yellow;'>Welcome to the world of kubernetes !!!</h1>")
 })
 
 const PORT = 3000
