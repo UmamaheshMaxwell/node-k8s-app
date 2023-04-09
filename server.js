@@ -6,8 +6,12 @@ app.get("/", (req, res) => {
     res.send("<h1 style='color:blue;background-color:yellow;'>Welcome to the world of kubernetes !!!</h1>")
 })
 
-const PORT = 3000
+const port = process.env.PORT 
 
-app.listen(PORT, () => {
-    console.log(`Server listening at PORT ${PORT}`)
-})
+app.listen(port, () => {
+    console.log(`
+      🚀  Server is running!
+      🔉  Listening on port ${port}
+      📭  Click here http://localhost:${port}
+    `);
+});
