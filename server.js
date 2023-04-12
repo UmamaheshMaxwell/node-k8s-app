@@ -10,7 +10,7 @@ const port = process.env.PORT
 
 app.listen(port, () => {
     console.log(`
-      🚀  Server is running!!
+      🚀  Server is running!!!
       🔉  Listening on port ${port}
       📭  Click here http://localhost:${port}
     `);
