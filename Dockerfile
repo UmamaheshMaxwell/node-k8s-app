@@ -1,8 +1,6 @@
 FROM node:18
-WORKDIR /usr/src/app
-COPY package*.json ./
-RUN npm install 
+WORKDIR /app
 COPY . .
-ENV PORT=${PORT}
-EXPOSE ${PORT}
-CMD ["node", "server.js"]
+RUN npm install 
+EXPOSE 3000
+CMD ["npm", "start"]
